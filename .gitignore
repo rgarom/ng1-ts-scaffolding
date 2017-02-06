@@ -1,0 +1,14 @@
+dist/
+.tmp/
+/node_modules/
+npm-debug.log
+/coverage/
+.npmrc
+.idea
+.iml
+.vscode
+
+# OS metadata
+.DS_Store
+Thumbs.db
+
