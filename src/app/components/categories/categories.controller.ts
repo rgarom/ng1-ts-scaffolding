@@ -1,4 +1,7 @@
 class CategoriesController {
+  CategoriesModel;
+  categories;
+
   constructor(CategoriesModel) {
     'ngInject';
 

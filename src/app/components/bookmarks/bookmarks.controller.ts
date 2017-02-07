@@ -1,10 +1,11 @@
 class BookmarksController {
-  constructor($scope, CategoriesModel, BookmarksModel) {
-    'ngInject';
+  bookmarks;
+  getCurrentCategory;
+  deleteBookmark;
+  currentBookmark;
 
-    this.$scope = $scope;
-    this.CategoriesModel = CategoriesModel;
-    this.BookmarksModel = BookmarksModel;
+  constructor(private $scope, private CategoriesModel, private BookmarksModel) {
+    'ngInject';
   }
 
   $onInit() {

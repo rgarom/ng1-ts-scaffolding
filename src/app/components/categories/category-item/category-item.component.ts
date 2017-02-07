@@ -1,4 +1,3 @@
-import template from './category-item.html';
 import './category-item.styl';
 
 const categoryItemComponent = {
@@ -6,7 +5,7 @@ const categoryItemComponent = {
     category: '<',
     selected: '&'
   },
-  template,
+  template: require('./category-item.html'),
   controllerAs: 'categoryItemCtrl'
 };
 

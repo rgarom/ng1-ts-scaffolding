@@ -1,9 +1,8 @@
-import template from './bookmarks.html';
 import controller from './bookmarks.controller';
 import './bookmarks.styl';
 
 const bookmarksComponent = {
-  template,
+  template: require('./bookmarks.html'),
   controller,
   controllerAs: 'bookmarksListCtrl'
 };
