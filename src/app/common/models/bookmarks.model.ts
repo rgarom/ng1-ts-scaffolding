@@ -1,11 +1,11 @@
 import {uniqueId, findIndex, remove} from 'lodash';
 
 class BookmarksModel {
+  private static $inject = ['$q'];
+
   private bookmarks: Array<Object>;
 
   constructor(private $q) {
-    'ngInject';
-
     this.bookmarks = [
       {'id': 1, 'title': 'AngularJS', 'url': 'http://angularjs.org', 'category': 'Development' },
       {'id': 2, 'title': 'Egghead.io', 'url': 'http://egghead.io', 'category': 'Development' },

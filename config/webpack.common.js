@@ -35,10 +35,6 @@ module.exports = function (options) {
           use: 'json-loader'
         },
         {
-          test: /\.styl$/,
-          use: ['style-loader', 'css-loader', 'stylus-loader']
-        },
-        {
           test: /\.css$/,
           use: ['to-string-loader', 'css-loader'],
           exclude: [helpers.root('src', 'styles')]

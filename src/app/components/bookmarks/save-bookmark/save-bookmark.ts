@@ -1,4 +1,4 @@
-import angular from 'angular';
+import * as angular from 'angular';
 import saveBookmarkComponent from './save-bookmark.component';
 
 const SaveBookmarkModule = angular.module('saveBookmark', [])

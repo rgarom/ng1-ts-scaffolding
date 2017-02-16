@@ -1,7 +1,7 @@
 import 'bootstrap-css-only';
 import 'normalize.css';
 
-import angular from 'angular';
+import * as angular from 'angular';
 import appComponent from './app.component';
 import CommonModule from './common/common';
 import ComponentsModule from './components/components';

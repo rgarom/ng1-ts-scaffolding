@@ -1,4 +1,4 @@
-import angular from 'angular';
+import * as angular from 'angular';
 import BookmarksModel from './models/bookmarks.model';
 import CategoriesModel from './models/categories.model';
 

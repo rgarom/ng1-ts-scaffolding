@@ -49,8 +49,6 @@
     "run-sequence": "1.2.2",
     "sass-loader": "4.1.1",
     "style-loader": "0.13.1",
-    "stylus": "^0.54.5",
-    "stylus-loader": "2.4.0",
     "to-string-loader": "1.1.5",
     "tslint": "4.4.2",
     "tslint-loader": "3.3.0",
@@ -63,8 +61,16 @@
     "yargs": "6.6.0"
   },
   "scripts": {
-    "start": "webpack-dev-server --config config/webpack.dev.js --open --progress --profile --watch --content-base src/",
-    "test": "karma start"
+    "build:dev": "npm run clean:dist && webpack --config config/webpack.dev.js --progress --profile",
+    "build:prod": "npm run clean:dist && webpack --config config/webpack.prod.js  --progress --profile --bail",
+    "build": "npm run build:dev",
+    "lint": "npm run tslint \"src/**/*.ts\"",
+    "server:dev": "webpack-dev-server --config config/webpack.dev.js --open --progress --profile --watch --content-base src/",
+    "start": "npm run server:dev",
+    "test": "npm run lint && karma start",
+    "tslint": "tslint",
+    "watch:dev": "npm run build:dev -- --watch",
+    "watch": "npm run watch:dev"
   },
   "keywords": [
     "angular",

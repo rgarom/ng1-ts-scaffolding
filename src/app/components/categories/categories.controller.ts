@@ -1,10 +1,10 @@
 class CategoriesController {
+  private static $inject = ['CategoriesModel'];
+
   CategoriesModel;
   categories;
 
   constructor(CategoriesModel) {
-    'ngInject';
-
     this.CategoriesModel = CategoriesModel;
   }
 

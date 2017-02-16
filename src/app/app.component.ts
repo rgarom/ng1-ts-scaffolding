@@ -1,4 +1,4 @@
-import './app.styl';
+import './app.scss';
 
 const AppComponent = {
   template: require('./app.html')

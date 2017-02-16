@@ -1,5 +1,5 @@
 import controller from './save-bookmark.controller';
-import './save-bookmark.styl';
+import './save-bookmark.scss';
 
 const saveBookmarkComponent = {
   bindings: {

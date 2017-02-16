@@ -1,4 +1,4 @@
-import angular from 'angular';
+import * as angular from 'angular';
 import categoriesComponent from './categories.component';
 import CategoryItemModule from './category-item/category-item';
 

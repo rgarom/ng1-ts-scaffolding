@@ -1,10 +1,10 @@
 class CategoriesModel {
+  private static $inject = ['$q', '$rootScope'];
+
   private currentCategory: string;
   private categories: Array<{}>;
 
   constructor(private $q, private $rootScope) {
-    'ngInject';
-
     this.currentCategory = null;
     this.categories = [
       {"id": 0, "name": "Development"},

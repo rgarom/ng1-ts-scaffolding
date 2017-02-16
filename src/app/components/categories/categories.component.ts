@@ -1,5 +1,5 @@
 import controller from './categories.controller';
-import './categories.styl';
+import './categories.scss';
 
 const categoriesComponent = {
   template: require('./categories.html'),

@@ -1,4 +1,4 @@
-import './category-item.styl';
+import './category-item.scss';
 
 const categoryItemComponent = {
   bindings: {

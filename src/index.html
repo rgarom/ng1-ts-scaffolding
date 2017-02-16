@@ -4,19 +4,13 @@
     <meta charset="utf-8">
     <title><%= htmlWebpackPlugin.options.title %></title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-status-bar-style" content="black">
     <meta name="description" content="<%= htmlWebpackPlugin.options.title %>">
     <link rel="icon" href="assets/images/favicon.jpg">
     <base href="<%= htmlWebpackPlugin.options.metadata.baseUrl %>">
   </head>
   <body ng-app="app" ng-strict-di ng-cloak>
-
     <app>
       Loading...
     </app>
-
-    <script src="bundle.js"></script>
   </body>
 </html>
